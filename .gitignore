@@ -1,1 +1,3 @@
-*.cbp
+*.cb
+/bin
+/debug
