@@ -4,6 +4,8 @@
 void main()
 {
     int n = 0;
+    int min=21;
+    int max=0;
     float sum=0;
     printf("Veuillez saisir le nombre d'élèves \n");
     scanf("%d", &n);
@@ -22,7 +24,13 @@ void main()
             }
         }
         sum += note;
+        if(note<min){
+            min=note;
+        }
+        if(note>max){
+            max=note;
+        }
     }
     sum = sum / n;
-    printf("la moyenne de la classe est %f /20", sum);
+    printf("la moyenne de la classe est %f /20. La note la plus basse est %d. La note la plus haute est %d.", sum, min, max);
 }
